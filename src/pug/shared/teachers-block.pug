@@ -1,0 +1,44 @@
+-
+    var url = require('./../../variables-for-templates').url
+
+#Teachers.container-fluid.mt-5
+    // Nineth block
+    .p-2.m-md-3.mt-5.text-center
+        .col-md-12.mx-auto.mb-5
+            h1.font-weight-bold.text-uppercase.text-center Преподаватели:
+            h6.font-weight-bold.text-uppercase.text-center Все преподаватели с опытом работы от 2- лет
+        .col-md-12.mx-0.px-0.row.text-center
+            #Master1Ref.col-lg-4.col-md-4.cursor-pointer
+                .col-lg-12
+                    img.teachers-photo(src=url + '/images/teachers/boldir.png', alt='')
+                h5.text-uppercase.mt-3.font-weight-bolder Евгений Болдырь
+                p.text-uppercase.text-primary.toggle-ref.small.font-weight-bolder
+                    span.small Смотреть о преподавателе
+                #Master1.arrow-up.black
+            #Master2Ref.col-lg-4.col-md-4.cursor-pointer
+                .col-lg-12
+                    img.teachers-photo(src=url + '/images/teachers/bok.png', alt='')
+                h5.text-uppercase.mt-3.font-weight-bolder
+                    | Боккар Сергей
+                p.text-uppercase.text-primary.toggle-ref.small.font-weight-bolder
+                    span.small Смотреть о преподавателе
+                #Master2.arrow-up.black.hidden-block
+            #Master3Ref.col-lg-4.col-md-4.cursor-pointer
+                .col-lg-12
+                    img.teachers-photo(src=url + '/images/teachers/kozak.png', alt='')
+                h5.text-uppercase.mt-3.font-weight-bolder Виталий Козак
+                p.text-uppercase.text-primary.toggle-ref.small.font-weight-bolder
+                    span.small Смотреть о преподавателе
+                #Master3.arrow-up.black.hidden-block
+        .mx-auto.col-xl-11.col-lg-11.col-md-12.text-left.px-md-0
+            .container-fluid.px-0.mx-0
+                div
+                    #Master1Info.col-md-12.px-0.teacher-info.border.border-dark
+                        h6.px-4.my-3
+                            | В настоящее время, работаю в крупнейшей промышленной компании Украины ПАТ "Укртрансгаз", на позиции Senior Software Engineer. В своей повседневной работе пользуюсь двумя языками программирования: ABAP - данный язык программирования, широко используется для программирования приложений для системы SAP R/3, а также Java - для написания графических приложений для настольных ПК, и Back-End функционала для веб-приложений. Хорошо знаком и умею использовать следующие технологии Java EE (JDBC, ORM Hibernate, Spring, Tomcat и т.д.). В свободное время, увлекаюсь разработкой под OS Android, в этом направлении есть несколько проектов опубликованных в магазине приложений Google Play. До начала своего знакомства и перехода в IT-сферу, учился также в IT-Centre, по направлению подготовки Junior Java Developer, и после обучения был полгода ассистентом у преподавателей IT-школы, а с января 2016 и сам вошел в преподавательский состав учебного заведения. Сейчас поставил для себя цель, не только накапливать и умножать свои навыки и знания, но и делиться ими с другими людьми желающими открыть для себя увлекательный мир современных технологий и программирования. В общении открытый и коммуникабельный, легко иду на контакт.
+                    #Master2Info.hidden-block.col-md-12.px-0.teacher-info.border.border-dark
+                        h6.px-4.my-3
+                            | Действующий разработчик с опытом более 3х лет. Энергичный, коммуникабельный, с активной жизненной позицией. Легко идет на контакт. Ранее проходил курсы программирования в Ит-центре, после чего был помощником преподавателя около года. С мая 2016 занимается преподаванием. Умеет просто и интересно донести материал до слушателя, заинтересовать, помочь поставить четкие цели и достичь желаемого результата. Готов в любой момент выслушать и дать дельный совет.
+                    #Master3Info.hidden-block.col-md-12.px-0.teacher-info.border.border-dark
+                        h6.px-4.my-3
+                            | В начале своего обучения многие посещают курсы. Часть материала понятна, часть нет. Многие студенты, не понимая материала, теряют интерес к обучению. Проанализировав промахи свои и неудачи других, комбинируя методы разных преподавателей, я выработал свой подход к изложению материала, Ставлю целью сделать курс очень связанным и логичным, объясняя, как что работает и почему. Рассматриваем до самых мелочей. Анализ кода, тестирование пройденного материала, домашние задания помогают отследить недостатки и прогресс обучения, скорректировать индивидуально и гарантировать результат.

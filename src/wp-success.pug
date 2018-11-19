@@ -1,0 +1,44 @@
+-
+    var url = require('./variables-for-templates').url
+
+| <?php  /* Template Name: Success */ ?>
+doctype html
+html(lang='en')
+    head
+        script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-110612076-1')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-110612076-1');
+        meta(charset='UTF-8')
+        title Курсы по программированию
+        link(rel='icon', type='image/x-icon', href=url + '/favicon.ico')
+    body.bg-light
+        style.
+            /*Add fonts*/
+            @font-face {
+                font-family: acrom;
+                font-weight: bold;
+                src: url("#{url}/fonts/acrom900.otf") format("opentype");
+            }
+            @font-face {
+                font-family: acrom600;
+                src: url("#{url}/fonts/acrom600.otf") format('opentype');
+            }
+            @font-face {
+                font-family: acrom;
+                font-weight: initial;
+                src: url("#{url}/fonts/acrom400.otf") format('opentype');
+            }
+            body {
+                font-family: acrom, Lucida Grande, sans-serif;
+            }
+            .font-weight-bolder {
+                font-family: acrom600, Lucida Grande, sans-serif;;
+            }
+        #Main.container-fluid.bg-dark.px-0.d-flex.flex-column.justify-content-between
+            include pug/shared/header
+        include pug/success/success-form-submit
+        include pug/shared/footer
+        include pug/shared/jivo-site

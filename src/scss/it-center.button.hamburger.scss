@@ -1,0 +1,114 @@
+$height-step: 0.2rem;
+$span-const: 1.5;
+
+.header-button-hamburger {
+  outline: 0 !important;
+  border: none;
+  @media screen and (orientation: landscape) {
+    width: 15*$height-step;
+  }
+  @media screen and (orientation: portrait) {
+    width: 15*$height-step * 0.85;
+  }
+  padding: 0;
+  // высота кнопки - подобрана методом пробы
+  @media screen and (orientation: landscape) {
+    min-height: 10*$height-step;
+  }
+  @media screen and (orientation: portrait) {
+    min-height: 10*$height-step * 0.85;
+  }
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  & span {
+    display: block;
+    position: absolute;
+    @media screen and (orientation: landscape) {
+      height: $span-const * $height-step * 1.1;
+    }
+    @media screen and (orientation: portrait) {
+      height: $span-const * $height-step * 0.85 * 1.1;
+    }
+    border-radius: 0.1rem;
+    width: 100%;
+    background: $navbar-light-active-color;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+
+    &:nth-child(2), &:nth-child(3) {
+      @media screen and (orientation: landscape) {
+        top: $span-const * 2.5 *  $height-step;
+      }
+      @media screen and (orientation: portrait) {
+        top: $span-const * 2.5 *  $height-step * 0.85;
+      }
+    }
+
+    &:nth-child(4) {
+      @media screen and (orientation: landscape) {
+        top: $span-const * 5 * $height-step;
+      }
+      @media screen and (orientation: portrait) {
+        top: $span-const * 5 * $height-step * 0.85;
+      }
+    }
+  }
+
+  &[aria-expanded="true"] span:nth-child(1) {
+    @media screen and (orientation: landscape) {
+      top: $span-const * 2.5 * $height-step;
+    }
+    @media screen and (orientation: portrait) {
+      top: $span-const * 2.5 * $height-step * 0.85;
+    }
+    width: 0;
+    left: 50%;
+  }
+
+  &[aria-expanded="true"] span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &[aria-expanded="true"] span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  &[aria-expanded="true"] span:nth-child(4) {
+    @media screen and (orientation: landscape) {
+      top: $span-const * 2.5 * $height-step;
+    }
+    @media screen and (orientation: portrait) {
+      top: $span-const * 2.5 * $height-step * 0.85;
+    }
+    width: 0;
+    left: 50%;
+  }
+}

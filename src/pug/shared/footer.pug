@@ -1,0 +1,64 @@
+-
+    var url = require('./../../variables-for-templates').url
+
+// 19 section
+footer.container-fluid.py-5.bg-light.lg-show
+    .col-10.mx-auto.row
+        .col-12.col-md
+            img(height='38', src=url + '/svg/logo_inverted.svg', alt='Image not found')
+            h6.small
+                small.d-block.mt-3.mb-3.text-dark.font-weight-bold.small
+                    | © 2009-2018
+                    br
+                    | Школа программирования
+                    |                     IT-Center.
+                    |                     Все права защищены.
+        .col-6.col-md.text-center
+            h5.text-uppercase.pb-1.mb-4.font-weight-bold Соц. сети
+            .col-12.text-center.mt-2
+                .d-flex.flex-row.justify-content-center
+                    a(href='https://www.facebook.com/itcentre.net')
+                        img.mr-2(height='42', src=url + '/svg/facebook.svg')
+                    a(href='https://www.instagram.com/itcentrenet/')
+                        img.mr-2(height='42', src=url + '/svg/instagram.svg')
+            .col-12.text-center.mt-2
+                .d-flex.flex-row.justify-content-center
+                    a(href='https://vk.com/itcentrenet')
+                        img.mr-2(height='42', src=url + '/svg/vk.svg')
+                    a(href='https://www.youtube.com/user/itcentrenet1')
+                        img.mr-2(height='42', src=url + '/svg/youtube.svg')
+        .col-6.col-md.text-center
+            h5.text-uppercase.mb-4.font-weight-bold Контакты
+            .row
+                .col-12.d-flex.flex-row.justify-content-center.align-content-center.px-0
+                    img(width='35', height='50', src=url + '/svg/phone.svg', alt='No image found')
+                    h6.small.text-center.mt-2.ml-2
+                        a.small.text-dark.font-weight-bolder(href='tel:+38 (044) 237-37-07') +38 (044) 237-37-07
+                        br
+                        a.small.text-dark.font-weight-bolder(href='tel:+38 (063) 237-37-07') +38 (063) 237-37-07
+                .col-10.mx-auto
+                    h6.small.text-center
+                        span.small.text-dark.font-weight-bold
+                            | Киев, метро "Почтовая площадь", ул. Братская 6/13 оф. 103
+footer.container-fluid.pt-3.pb-3.bg-light.md-show
+    .col-12
+        .col-12.px-0.col-md.text-center
+            .col-12.px-0.text-center
+                .d-flex.flex-row.justify-content-center.mb-2
+                    a(href='https://www.facebook.com/itcentre.net')
+                        img.mr-3(height='65', src=url + '/svg/facebook.svg', alt='')
+                    a(href='https://www.instagram.com/itcentrenet/')
+                        img.mr-3(height='65', src=url + '/svg/instagram.svg', alt='')
+                    a(href='https://vk.com/itcentrenet')
+                        img.mr-3(height='65', src=url + '/svg/vk.svg', alt='')
+                    a(href='https://www.youtube.com/user/itcentrenet1')
+                        img.mr-3(height='65', src=url + '/svg/youtube.svg', alt='')
+        .col-sm-8.mx-auto.col-md-6.col-md.mt-3
+            img.footer-mobile.logo(src=url + '/svg/logo_inverted.svg', alt='Image not found')
+            h6
+                small.d-block.mt-3.mb-3.text-dark.font-weight-bold.small
+                    | © 2009-2018
+                    br
+                    | Школа программирования
+                    |                     IT-Center.
+                    |                     Все права защищены.

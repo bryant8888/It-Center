@@ -1,0 +1,102 @@
+-
+    var url = require('./../../variables-for-templates').url
+
+.container-fluid
+    // Third block
+    .position-relative.overflow-hidden-block.p-3.p-md-5.m-md-3.text-center
+        .col-md-12.mt-3.mb-5.pb-lg-5.pb-md-0.mx-auto
+            h1.font-weight-bold.text-uppercase Развитие твоей карьеры в Java
+        .landscape-show.col-xl-10.offset-xl-1.col-md-hor-12.offset-lg-0.career-way.mt-5.pt-5.row
+            .col-md-hor-3
+                .career-step
+                    img.step-image.pl-5.ml-5(src=url + '/images/career/b3foto1.png', alt='')
+            .col-md-hor-3
+                .career-currency.correct-junior
+                    h5.text-muted 400-800$
+                .career-time.pl-xl-3.pl-lg-5.ml-xl-3.ml-lg-0
+                    h6.small.text-uppercase
+                        | Спустя
+                        br
+                        |  8 месяцев
+                .career-step
+                    img.step-image.mr-5.pr-5(src=url + '/images/career/b3foto2.png', alt='')
+            .col-md-hor-3
+                .career-currency.correct-middle
+                    h5.text-muted 1300-2300$
+                .career-time.ml-xl-4.pl-xl-3.pl-lg-3.ml-lg-4
+                    h6.small.text-uppercase
+                        | Спустя
+                        br
+                        |  1-2 года
+                .career-step
+                    img.step-image.mr-5.pr-5(src=url + '/images/career/b3foto3.png', alt='')
+            .col-md-hor-3
+                .career-currency.correct-senior
+                    h5.text-muted 2500-4000$
+                .career-time.correct-senior
+                    h6.small.text-uppercase
+                        | Спустя
+                        br
+                        |  2-4 года
+                .career-step
+                    img.step-image.mr-5.pr-5(src=url + '/images/career/b3foto4.png', alt='')
+            .col-md-hor-12.row
+                .career-arrow.col-md-hor-12
+                    img(src=url + '/images/career/arrow.png', alt='Cant find image')
+                .col-md-hor-3.arrow-step
+                    h5.text-light.rotate-previous.ml-5.pl-2 Сейчас
+                .col-md-hor-3.arrow-step
+                    h5.text-light.rotate-next.ml-5 Junior
+                .col-md-hor-3.arrow-step
+                    h5.text-light.rotate-previous.ml-3 Middle
+                .col-md-hor-3.arrow-step
+                    h5.text-light.rotate-next Senior
+        .portrait-show.col-xl-10.offset-xl-1.col-md-hor-12.offset-lg-0.mb-5.pb-5.career-way.mx-auto.row
+            .carousel
+                ul.pane-container
+                    li.pane
+                        .vertical-center
+                            .carousel-content.d-flex.flex-row.align-items-end.justify-content-center
+                                img.first-img(src=url + '/images/career/b3foto1.png', alt='')
+                                .position-absolute.carousel-comment
+                                    h5.text-uppercase.text-dark Сейчас
+                    li.pane
+                        .vertical-center
+                            .carousel-content.d-flex.flex-row.align-items-end.justify-content-center
+                                img.second-img(src=url + '/images/career/b3foto2.png', alt='')
+                                .position-absolute.carousel-comment
+                                    h5.text-uppercase.text-dark
+                                        | Спустя
+                                        br
+                                        |  8 месяцев
+                                    h4.text-muted 400-800$
+                    li.pane
+                        .vertical-center
+                            .carousel-content.d-flex.flex-row.align-items-end.justify-content-center
+                                img.third-img(src=url + '/images/career/b3foto3.png', alt='')
+                                .position-absolute.carousel-comment
+                                    h5.text-uppercase.text-dark
+                                        | Спустя
+                                        br
+                                        |  1-2 года
+                                    h4.text-muted 1300-2300$
+                    li.pane
+                        .vertical-center
+                            .carousel-content.d-flex.flex-row.align-items-end.justify-content-center
+                                img.fourth-img(src=url + '/images/career/b3foto4.png', alt='')
+                                .position-absolute.carousel-comment
+                                    h5.text-uppercase.text-dark
+                                        | Спустя
+                                        br
+                                        |  2-4 года
+                                    h4.text-muted 2500-4000$
+            .carousel-helper.mx-auto.mt-4
+                .helper-row
+                    #CarouselPointer1.helper.mr-1.d-inline-flex.flex-column.justify-content-end.align-items-start.border.border-dark
+                        .helper-marker.bg-dark.border.border-dark.m-0
+                    #CarouselPointer2.helper.mr-1.d-inline-flex.flex-column.justify-content-end.align-items-start.border.border-dark
+                        .helper-marker.bg-dark.border.border-dark.m-0
+                    #CarouselPointer3.helper.mr-1.d-inline-flex.flex-column.justify-content-end.align-items-start.border.border-dark
+                        .helper-marker.bg-dark.border.border-dark.m-0
+                    #CarouselPointer4.helper.mr-1.d-inline-flex.flex-column.justify-content-end.align-items-start.border.border-dark
+                        .helper-marker.bg-dark.border.border-dark.m-0
